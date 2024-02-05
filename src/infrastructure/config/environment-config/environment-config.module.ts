@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { EnvironmentConfigService } from './environment-config.service';
-import { validate } from './environment-config-validation';
+// import { validate } from './environment-config-validation';
 
 @Module({
   imports: [
@@ -12,7 +12,6 @@ import { validate } from './environment-config-validation';
           ? false
           : true,
       isGlobal: true,
-      validate,
     }),
   ],
   providers: [EnvironmentConfigService],
