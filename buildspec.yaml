@@ -3,10 +3,10 @@ phases:
   install:
     runtime-versions:
       nodejs: 20
-  commands:
-    - npm install -g pnpm
-    - npm install -g typescript
-    - npm install -g @nestjs/cli
+    commands:
+      - npm install -g pnpm
+      - npm install -g typescript
+      - npm install -g @nestjs/cli
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
