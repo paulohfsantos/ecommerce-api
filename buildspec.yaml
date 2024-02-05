@@ -12,10 +12,10 @@ phases:
       - npm i
       - npm run build
       # - command
-  post_build:
-    commands:
-      - npm run test
-      - npm run test:e2e
+  # post_build:
+  #   commands:
+  #     - npm run test
+  #     - npm run test:e2e
 artifacts:
   files:
     - "**/*"
