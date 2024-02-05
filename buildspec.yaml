@@ -1,0 +1,24 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+    nodejs: 20
+  commands:
+    - npm install -g pnpm
+    - npm install -g typescript
+    - npm install -g @nestjs/cli
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - pnpm build
+  post_build:
+    commands:
+      - echo Nothing to do in the post_build phase...
+cache:
+  paths:
+    - 'node_modules/**/*'
+artifacts:
+  files:
+    - '**/*'
